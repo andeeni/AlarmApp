@@ -1,4 +1,4 @@
-package com.andeeni.alarmapp.ui.dashboard;
+package com.andeeni.alarmapp.ui.alarms;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.andeeni.alarmapp.R;
 
-public class DashboardFragment extends Fragment {
+public class AlarmsFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private AlarmsViewModel alarmsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        alarmsViewModel =
+                new ViewModelProvider(this).get(AlarmsViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_alarms, container, false);
+        final TextView textView = root.findViewById(R.id.text_alarms);
+        alarmsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
