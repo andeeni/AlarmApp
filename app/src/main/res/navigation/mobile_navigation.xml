@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_alarms">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.andeeni.alarmapp.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_alarms"
+        android:name="com.andeeni.alarmapp.ui.alarms.AlarmsFragment"
+        android:label="@string/title_alarms"
+        tools:layout="@layout/fragment_alarms" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.andeeni.alarmapp.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_history"
+        android:name="com.andeeni.alarmapp.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.andeeni.alarmapp.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_leaderboard"
+        android:name="com.andeeni.alarmapp.ui.leaderboard.LeaderboardFragment"
+        android:label="@string/title_leaderboard"
+        tools:layout="@layout/fragment_leaderboard" />
 </navigation>
