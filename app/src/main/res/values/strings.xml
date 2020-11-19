@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">You Snooze You Lose</string>
-    <string name="title_alarms">Alarms</string>
-    <string name="title_history">History</string>
-    <string name="title_leaderboard">Leaderboard</string>
-</resources>
